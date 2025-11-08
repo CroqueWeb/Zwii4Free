@@ -1,0 +1,30 @@
+.galleryGalleryPicture {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 150px;
+	position: relative;
+	text-align: center;
+	background: rgba(0, 0, 0, .7);
+	margin: -2px;
+}
+.galleryGalleryName {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 6px 0;
+	background: rgba(255, 255, 255, .7);
+	color: #000;
+}
+.galleryGalleryName:hover {
+	background: rgba(255, 255, 255, 1);
+}
+.galleryGalleryPicture > img {
+	max-height: 150px;
+	transition: transform .30s ease;
+}
+.galleryGalleryPicture > img:hover {
+	transform: translate(0,-10%) scale(1.2);
+	z-index: 2;
+}

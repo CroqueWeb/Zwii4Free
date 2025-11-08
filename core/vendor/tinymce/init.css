@@ -1,0 +1,58 @@
+/* Personnalisation de TinyMCE */
+
+.mce-flow-layout {
+    border: 1px solid #ddd !important;
+}
+.mce-btn-group .mce-btn {
+    margin: 0px !important;
+}
+.mce-btn-group:not(:first-child) {
+	border-left: 1px !important;
+	padding-left: 0;
+	margin-left: 1px !important;
+}
+.mce-container {
+	background: #efefef !important; /* couleur des barres */
+}
+.mce-panel {
+	border: 0 !important;
+}
+.mce-top-part::before,
+.mce-tinymce {
+	box-shadow: none !important;
+}
+.mce-tinymce {
+	border: 1px solid #ddd !important; /* bordure globale*/
+ }
+#mce-modal-block {
+	background: #000 !important;
+}
+.mce-window {
+	box-shadow: none !important;
+}
+.mce-toolbar-grp {
+	background: #ECEFF1 !important;
+}
+.mce-toolbar-grp .mce-btn {
+	border: 0 !important;
+	background: transparent !important;
+}
+.mce-toolbar-grp .mce-btn button {
+	padding: 10px 6px !important
+}
+.mce-toolbar-grp .mce-btn:hover,
+.mce-toolbar-grp .mce-active {
+	background: #FFF !important;
+}
+.mce-toolbar-grp .mce-caret {
+	border-top-color: #B5BCC2 !important;
+}
+.mce-toolbar-grp .mce-active * {
+	color: #595959 !important;
+}
+.mce-toolbar-grp .mce-btn-group {
+	padding: 0 !important;
+}
+.mce-toolbar-grp .mce-open {
+	border: 0 !important;
+}

@@ -1,0 +1,28 @@
+.galleryPicture {
+	display: block;
+	height: 200px;
+	position: relative;
+	text-align: center;
+	background: rgba(0, 0, 0, .7);
+	margin: -2px;
+}
+.galleryName {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 6px 0;
+	background: rgba(255, 255, 255, .7);
+	color: #000;
+}
+.galleryName:hover {
+	background: rgba(255, 255, 255, 1);
+}
+.galleryPicture > img {
+	max-height: 200px;
+	transition: transform .30s ease-out;
+}
+.galleryPicture > img:hover {
+	transform: translate(0,-10%) scale(1.2);
+	z-index: 2;
+}

@@ -1,0 +1,12 @@
+User-agent: DuckDuckBot
+Disallow:
+User-agent: Qwantify
+Disallow:
+User-agent: Voilabot
+Disallow:
+User-agent: Googlebot
+Disallow:
+User-agent: bingbot
+Disallow:
+User-agent: *
+Disallow: /

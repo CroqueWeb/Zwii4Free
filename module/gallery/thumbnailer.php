@@ -30,8 +30,8 @@ $vignette = str_replace($extension,'',$par);
 $miniature = $dossiercache.'/'.$cache.'/'.$vignette.'.jpg';
 if(!file_exists($miniature))
 {
-	$size = getimagesize($img);
-	$mime = $size['mime'];
+	$imginfo = getimagesize($img);
+	$mime = $imginfo['mime'];
 	if ((function_exists('exif_read_data')) && ($mime == 'image/jpeg'))
 	{
 		$exif = exif_read_data($img);
@@ -54,7 +54,6 @@ if(!file_exists($miniature))
 			imagejpeg($image, $img, 90);
 		}
 	}
-	$imginfo = getimagesize($img);
 	$largeur = $imginfo[0];
 	$hauteur = $imginfo[1];
 	$type = $imginfo[2];

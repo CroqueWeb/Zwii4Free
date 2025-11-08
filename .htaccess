@@ -14,10 +14,7 @@ SetEnv SESSION_USE_TRANS_SID 0
 Options -Indexes -MultiViews
 
 # Bloque l'accès au fichier de données
- <Files data.json>
-    Order allow,deny
-    Deny from all
- </Files>
-
-# Attention, surtout ne rien modifier ci-dessous !
-# URL rewriting
+<Files data.json>
+Order allow,deny
+Deny from all
+</Files>
